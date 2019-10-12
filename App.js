@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from './src/components/screens/Home';
 import BarCodeScanner from './src/components/screens/BarCodeScanner';
+import Product from './src/components/screens/Product';
 
 
 const AppNavigator = createStackNavigator(
@@ -13,7 +14,10 @@ const AppNavigator = createStackNavigator(
     },
     BarCodeScanner: {
       screen: BarCodeScanner
-    }
+    },
+    Product: {
+      screen: Product
+    },
   },
   {
     initialRouteName: 'Home',
