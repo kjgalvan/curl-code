@@ -1,23 +1,26 @@
-import React from 'react';
 import { StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from './src/components/screens/Home';
+import BarCodeScanner from './src/components/screens/BarCodeScanner';
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: Home,
+
+const AppNavigator = createStackNavigator(
+  {
+    Home: {
+      screen: Home
+    },
+    BarCodeScanner: {
+      screen: BarCodeScanner
+    }
   },
-});
+  {
+    initialRouteName: 'Home',
+  }
+);
 
 export default createAppContainer(AppNavigator);
-
-// export default function App() {
-//   return (
-//     <Home />
-//   );
-// }
 
 const styles = StyleSheet.create({
   container: {

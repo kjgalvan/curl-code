@@ -1,12 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default function Home() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+export default class Home extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Home Page!</Text>
+        <Button
+          title="Go to bar code scanner"
+          onPress={() => this.props.navigation.navigate('BarCodeScanner')}
+        />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
