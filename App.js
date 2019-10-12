@@ -1,13 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from './src/components/screens/Home';
 
-export default function App() {
-  return (
-    <Home />
-  );
-}
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: Home,
+  },
+});
+
+export default createAppContainer(AppNavigator);
+
+// export default function App() {
+//   return (
+//     <Home />
+//   );
+// }
 
 const styles = StyleSheet.create({
   container: {
