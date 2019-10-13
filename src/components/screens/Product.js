@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Image, ActivityIndicator } from 'react-native-elements';
 import firebase from 'firebase';
 import '@firebase/firestore';
 
@@ -25,11 +26,10 @@ export default class Product extends React.Component {
       });
 
     return (
-      <View style={styles.container}>
-        <Image source={{ uri: "https://www.okaypurenaturals.com/okay-hemp-seed-shea-softening-anti-breakage-shampoo-helps-stimulate-hair-growth-moisturize-hair-scalp-prevents-breakage-sulfate-silicone-paraben-free-for-all-hair-types-and-textures-made-in-usa-12oz-355ml/" }}
-          style={{ width: 200, height: 200 }} />
-        <Image source={{ uri: "https://www.okaypurenaturals.com/okay-hemp-seed-shea-softening-anti-breakage-shampoo-helps-stimulate-hair-growth-moisturize-hair-scalp-prevents-breakage-sulfate-silicone-paraben-free-for-all-hair-types-and-textures-made-in-usa-12oz-355ml/" }}
-          style={{ width: 200, height: 200 }} PlaceholderContent={<ActivityIndicator />} />
+      <View>
+        <Image
+          style={{ width: 200, height: 200 }}
+        />
       </View>
     );
   }

@@ -8,15 +8,15 @@ export default function Home() {
   }
 
   const wording = "Login";
-  
+
 
   return (
     <View style={styles.container}>
       <Text>Have an account?</Text>
-      <Button style={styles.buttonTop} onPress={onClick} title={wording}/>
+      <Button style={styles.buttonTop} onPress={onClick} title={wording} />
       <Text>or</Text>
       <Button onPress={onClick} title="Register" />
-     <Text> to continue</Text>
+      <Text> to continue</Text>
     </View>
   );
 }
