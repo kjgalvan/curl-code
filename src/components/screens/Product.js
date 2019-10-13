@@ -157,7 +157,7 @@ export default class Product extends React.Component {
         <View style={{ flex: 1, flexDirection: 'row' }}>
           <Image containerStyle={{ marginTop: 15, marginBottom: 15, marginLeft: 15 }} source={product && product.imageUrl ? { uri: product.imageUrl } : { uri: notFound }} style={{ width: 150, height: 150 }} />
           <View style={{ width: SCREEN_WIDTH - 180 }}>
-            <Text h2 style={{ fontFamily: 'regular', marginLeft: 10, marginTop: 10 }} >{product && product.name}</Text>
+            <Text h4 style={{ fontFamily: 'regular', marginLeft: 10, marginTop: 10 }} >{product && product.name}</Text>
           </View>
         </View>
         <View>
