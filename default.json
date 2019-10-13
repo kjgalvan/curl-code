@@ -1,0 +1,80 @@
+[
+  [
+    {
+      "category": "avoid",
+      "filter": "contains",
+      "input": "botanisil, cone, dimethcione, dimethicon, microsil, silane, silicon, siloxane, siloxysilicate, silsesquioxane, silylate",
+      "reason": "The reason these are discouraged on CG is they can build up on the hair and it is not possible to remove them with just a cowash.",
+      "operator": "unless"
+    },
+    {
+      "category": "warn",
+      "filter": "begins",
+      "input": "peg, pg-, ppg",
+      "reason": "These silicones are water soluble, so they should wash out with cowashing. Some believe they are OK but Lorraine Massey has said to avoid them. It's up to you."
+    }
+  ],
+  [
+    {
+      "category": "avoid",
+      "filter": "contain",
+      "input": "cera, cire, dodecane, dodecene, isododecane, isohexad, isohexadecane, isohexanedecane, lanolin, mineral oil, paraffin, petrolatum, shellac, wax",
+      "reason": "The reason these are forbidden on CG is they can build up on the hair and it is not possible to remove them with just a cowash.",
+      "operator": "unless"
+    },
+    {
+      "category": "approve",
+      "filter": "is",
+      "input": "emulsifying wax, emulsifying wax nf, peg 8 beeswax, peg-75 lanolin, peg-8 beeswax",
+      "reason": "These waxes are water-soluble waxes."
+    }
+  ],
+  [
+    {
+      "category": "avoid",
+      "filter": "is",
+      "input": "alkyl benzene sulfonate, alkylbenzene sulfonate, ammonium cocoyl sulfate, ammonium cocoyl sulphate, ammonium laureth sulfate, ammonium laureth sulphate, ammonium lauryl sulfate, ammonium lauryl sulphate, ammonium xylene-sulfonate, ammonium xylenesulfonate, ethyl peg-15 cocamine sulfate, sodium alkyl sulfate, sodium alkyl sulphate, sodium c12-18 alkyl sulfate, sodium c12-18 alkyl sulphate, sodium cetearyl sulfate, sodium cetearyl sulphate, sodium coceth sulfate, sodium coceth sulphate, sodium coco sulfate, sodium coco sulphate, sodium coco-sulfate, sodium coco-sulphate, sodium cocosulfate, sodium cocosulphate, sodium laureth sulfate, sodium laureth sulphate, sodium laureth-40 sulfate, sodium laureth-40 sulphate, sodium lauryl sulfate, sodium lauryl sulphate, sodium myreth sulfate, sodium myreth sulphate, sodium polystyrene sulfate, sodium polystyrene sulphate, sodium xylene-sulfonate, sodium xylenesulfonate, tea dodecylbenzenesulfonate, tea lauryl sulfate, tea lauryl sulphate, tea-dodecylbenzenesulfonate, triethanolamine lauryl sulfate, triethanolamine lauryl sulphate",
+      "reason": "Sulfates or similar cleansers and not recommended because they can dry out hair. How drying a product is depends on more than if it contains sulfates or not, but it's easiest just to avoid them."
+    }
+  ],
+  [
+    {
+      "category": "warn",
+      "filter": "is",
+      "input": "dioctyl sodium sulfosuccinate, disodium cocoyl glutamate, olefin sulfonate, oliefin sulfonate, sodium c 14-18 olefin sulfonate, sodium c 16-18 olefin sulfonate, sodium c12-14 olefin sulfonate, sodium c14-15 olefin sulfonate, sodium c14-16 olefin sulfonate, sodium c14-26 olefin sulfonate, sodium cocoyl glutamate, sodium cocoyl sarcosinate, sodium lauroyl methyl isethionate, sodium lauroyl methyl lsethionate, sodium lauroyl sarcosinate, sodium lauroyl sarcosine, sodium lauroylmethyl isethionate, sodium lauryl methyl isothionate, sodium lauryl sarcosinate, sodium lauryl sulfoacetate, sodium myristoyl sarcosinate",
+      "reason": "Some find these drying, but they are NOT sulfates. We recommend you do your own research to find out if these are good for your hair."
+    }
+  ],
+  [
+    {
+      "category": "approve",
+      "filter": "is",
+      "input": "ammonium cocoyl isethionate, babassuamidopropyl betaine, capryl glucoside, caprylyl glucoside, cocamidopropyl betaine, cocamidopropyl hydroxysultaine, coco betaine, coco glucoside, decyl glucoside, decyl polyglucose, disodium 2-sulfolaurate, disodium cocoamphodiacetate, disodium cocoamphodipropionate, disodium laureth succinate, disodium laureth sulfosuccinate, disodium lauryl sulfosuccinate, lauryl glucoside, lauryl hydroxysultaine, sodium cocoamphoacetate, sodium cocoyl isethionate, sodium lauroamphoacetate, sodium lauroyl glutamate, sodium lauroyl hydrolyzed silk, sodium lauroyl lactylate, sodium lauroyl oat amino acids, sodium lauryl glucose carboxylate, sodium laurylglucosides hydroxypropylsulfonate, sodium methyl 2-sulfolaurate, sodium methyl cocoyl taurate",
+      "reason": "These are approved CG friendly detergents."
+    }
+  ],
+  [
+    {
+      "category": "warn",
+      "filter": "is",
+      "input": "potassium hydroxide, saponification, saponified, saponifying, soap, sodium carboxylate, sodium palm",
+      "reason": "These are soaps which are potentially as drying as sulfates."
+    }
+  ],
+  [
+    {
+      "category": "warn",
+      "filter": "contains",
+      "input": "paraben",
+      "reason": "Some say parabens may be linked to cancer. We recommend we do your own research."
+    }
+  ],
+  [
+    {
+      "category": "warn",
+      "filter": "is",
+      "input": "witch hazel",
+      "reason": "Most types of witch hazel contain alcohol. Contact the manufacturer to see if the witch hazel in this product contains alcohol. Even if it does not contain alcohol, many people find witch hazel drying. Use with caution if you have hair prone to dryness."
+    }
+  ]
+]
