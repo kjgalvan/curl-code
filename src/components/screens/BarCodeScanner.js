@@ -8,7 +8,6 @@ import { BarCodeScanner as Scanner } from 'expo-barcode-scanner';
 export default class BarCodeScanner extends React.Component {
   state = {
     hasCameraPermission: null,
-    scanned: false,
   };
 
   async componentDidMount() {
@@ -21,7 +20,7 @@ export default class BarCodeScanner extends React.Component {
   };
 
   render() {
-    const { hasCameraPermission, scanned } = this.state;
+    const { hasCameraPermission } = this.state;
 
     if (hasCameraPermission === null) {
       return <Text>Requesting for camera permission</Text>;
@@ -37,20 +36,14 @@ export default class BarCodeScanner extends React.Component {
           justifyContent: 'flex-end',
         }}>
         <Scanner
-          onBarCodeScanned={scanned ? undefined : this.handleBarCodeScanned}
+          onBarCodeScanned={this.handleBarCodeScanned}
           style={StyleSheet.absoluteFillObject}
         />
-
-        {scanned && (
-          <Button title={'Tap to Scan Again'} onPress={() => this.setState({ scanned: false })} />
-        )}
       </View>
     );
   }
 
   handleBarCodeScanned = ({ type, data }) => {
-    this.setState({ scanned: true });
-
     this.props.navigation.navigate('Product', { barCodeType: type, productBarCode: data });
   };
 }
