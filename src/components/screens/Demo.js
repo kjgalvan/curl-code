@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, ScrollView, StyleSheet, Dimensions, Platform } from 'react-native';
 import {
   SearchBar,
