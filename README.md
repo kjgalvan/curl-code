@@ -18,5 +18,5 @@ Warnings given for questionable ingredients
 ![Google Vision API results](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100737_Expo%5B1%5D.jpg?alt=media&token=1b9b8db3-a085-4c3c-bf45-8d18e208f664)
 Able to take picture, upload to Firebase Storage, and send to Google Vision API to find ingredient list from picture
 
-![Image of Login](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100532_Expo%5B2%5D.jpg?alt=media&token=8af83919-6818-419b-9ef7-54c3d2b74fe8)
+![Image of Login](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100758_Expo.jpg?alt=media&token=115ecadf-f436-4a4e-9105-685042b7a3dc)
 Login page provided by react-native-elements, fully functional with Firebase authentication
