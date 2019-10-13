@@ -1,10 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Alert } from 'react-native';
+import { Button, ButtonGroup } from 'react-native-elements';
 
 export default function Home() {
+  onClick = () => {
+    Alert.alert("Continue");
+  }
+
+  const wording = "Login";
+  
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Have an account?</Text>
+      <Button style={styles.buttonTop} onPress={onClick} title={wording}/>
+      <Text>or</Text>
+      <Button onPress={onClick} title="Register" />
+     <Text> to continue</Text>
     </View>
   );
 }
@@ -12,8 +24,11 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#fff0f5',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  buttonTop: {
+    margin: 10,
+  }
 });

@@ -1,12 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { ThemeProvider } from 'react-native-elements';
 
-import Home from './src/components/screens/Home';
+import Ingr from './src/components/screens/Ingr';
 
 export default function App() {
   return (
-    <Home />
-  );
+    <ThemeProvider>
+      <Ingr />
+      </ThemeProvider>
+      );
 }
 
 const styles = StyleSheet.create({
