@@ -3,19 +3,19 @@
 ## Screenshots
 
 
-![Demo Page](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100532_Expo%5B2%5D.jpg?alt=media&token=8af83919-6818-419b-9ef7-54c3d2b74fe8)
+![Demo Page](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100532_Expot1.jpg?alt=media&token=6fed0f14-e05c-4145-a7f5-17e4a9f12d75)
 
 Demo page with two options: Barcode scanning and Google Vision API image to text
 
-![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100552_Expo%5B1%5D.jpg?alt=media&token=7da4b5df-6415-4ae3-bec8-839df49fee47)
+![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100552_Expo.jpg?alt=media&token=7f612a14-9d68-4b58-aba1-1b993a429a89)
 
 Scanning product is fully functional, rulesets are written to customizable in future
 
-![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100620_Expo%5B1%5D.jpg?alt=media&token=9d45f98a-418a-43de-8aad-e8a39d0b6f66)
+![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100620_Expo.jpg?alt=media&token=1fa53f96-40bd-4e06-b041-10b99abdf732)
 
 Easy to see at a glance if product is Curly Girl Method compliant
 
-![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100632_Expo%5B1%5D.jpg?alt=media&token=fe790bf6-e70a-4dbd-9496-a4aaa826381b)
+![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100632_Expo.jpg?alt=media&token=e427207e-a0e3-42eb-8000-db8219dd4101)
 
 Warnings given for questionable ingredients
 
