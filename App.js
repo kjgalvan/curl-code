@@ -13,9 +13,9 @@ import Signup from './src/components/screens/Signup';
 
 import firebaseConfig from './firebaseConfig';
 
-firebase.initializeApp(firebaseConfig);
-
 import { Platform, InteractionManager } from 'react-native';
+
+firebase.initializeApp(firebaseConfig);
 
 const _setTimeout = global.setTimeout;
 const _clearTimeout = global.clearTimeout;
@@ -52,7 +52,7 @@ if (Platform.OS === 'android') {
   };
 
   global.clearTimeout = id => {
-    if (typeof id === 'string' && id.startWith('_lt_')) {
+    if (typeof id === 'string' && id.startsWith('_lt_')) {
       _clearTimeout(timerFix[id]);
       delete timerFix[id];
       return;
@@ -88,12 +88,3 @@ const AppNavigator = createStackNavigator(
 );
 
 export default createAppContainer(AppNavigator);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -9,9 +9,11 @@ export default class Product extends React.Component {
     const { navigation } = this.props;
 
     const db = firebase.firestore();
-    const barcode = navigation.getParam('productBarCode', '')
+    var barcode = navigation.getParam('productBarCode', '')
 
-    console.log("hi2");
+    if (barcode.length === 12) {
+      barcode = "0" + barcode;
+    }
 
     db.collection("products").where("barcode", "==", barcode)
       .get()
