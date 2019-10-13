@@ -6,49 +6,49 @@ import { Input, Button, SearchBar } from 'react-native-elements';
 export default class InMainPage extends React.Component {
     state = {
         search: '',
-      };
-    
+    };
+
     updateSearch = search => {
         this.setState({ search });
-      };
+    };
 
-    render(){
+    render() {
         const { search } = this.state;
         return (
             <ScrollView>
-            <View style={styles.container}>
-                 <SearchBar
-                    placeholder="Type Here..."
-                    onChangeText={this.updateSearch}
-                    value={search}
-                />
-                
-                <Text style={ styles.container2 }>Recommended Products for you</Text>
-                <Text style={ styles.container2 }>Leave-in</Text>
-                <View style={ styles.container3 }>
-                    <Image source={require("./images/1.png")} style={ styles.image }></Image>
-                    <Text style={ styles.container2 }>OKAY Black Jamaican Castor Oil</Text>
-                </View>
+                <View style={styles.container}>
+                    <SearchBar
+                        placeholder="Type Here..."
+                        onChangeText={this.updateSearch}
+                        value={search}
+                    />
 
-                <Text style={ styles.container2 }>Conditioner</Text>
-                <View style={ styles.container3 }>
-                    <Image source={require("./images/2.jpeg")} style={ styles.image }></Image>
-                    <Text style={ styles.container2 }>Aunt Jackie's Oh So Clean Moisturizing and Softening Shampoo</Text>
-                </View>
+                    <Text style={styles.container2}>Recommended Products for you</Text>
+                    <Text style={styles.container2}>Leave-in</Text>
+                    <View style={styles.container3}>
+                        <Image source={require("./images/1.png")} style={styles.image}></Image>
+                        <Text style={styles.container2}>OKAY Black Jamaican Castor Oil</Text>
+                    </View>
 
-                <Text style={ styles.container2 }>Gel</Text>
-                <View style={ styles.container3 }>
-                    <Image source={require("./images/3.jpg")} style={ styles.image }></Image>
-                    <Text style={ styles.container2 }>Shea Moisture Mongongo & Hemp Seed Oils High Porosity Moisture-seal Styling Gel</Text>
-                </View>
+                    <Text style={styles.container2}>Conditioner</Text>
+                    <View style={styles.container3}>
+                        <Image source={require("./images/2.jpeg")} style={styles.image}></Image>
+                        <Text style={styles.container2}>Aunt Jackie's Oh So Clean Moisturizing and Softening Shampoo</Text>
+                    </View>
 
-                <Text style={ styles.container2 }>Shampoo</Text>
-                <View style={ styles.container3 }>
-                    <Image source={require("./images/4.jpg")} style={ styles.image }></Image>
-                    <Text style={ styles.container2 }>OKAY HEMP SEED & SHEA SOFTENING & ANTI BREAKAGE SHAMPOO</Text>
+                    <Text style={styles.container2}>Gel</Text>
+                    <View style={styles.container3}>
+                        <Image source={require("./images/3.jpg")} style={styles.image}></Image>
+                        <Text style={styles.container2}>Shea Moisture Mongongo & Hemp Seed Oils High Porosity Moisture-seal Styling Gel</Text>
+                    </View>
+
+                    <Text style={styles.container2}>Shampoo</Text>
+                    <View style={styles.container3}>
+                        <Image source={require("./images/4.jpg")} style={styles.image}></Image>
+                        <Text style={styles.container2}>OKAY HEMP SEED & SHEA SOFTENING & ANTI BREAKAGE SHAMPOO</Text>
+                    </View>
+
                 </View>
-          
-            </View>
             </ScrollView>
         );
     }

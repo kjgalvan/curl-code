@@ -1,15 +1,15 @@
-import { StyleSheet } from "react-native";
+import React, { useState } from 'react';
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import firebase from "firebase";
 import "@firebase/firestore";
+import * as Font from 'expo-font';
 
 import BarCodeScan from "./src/components/screens/BarCodeScan";
 import BarCodeScanner from "./src/components/screens/BarCodeScanner";
 import Home from "./src/components/screens/Home";
 import Login from "./src/components/screens/Login";
 import Product from "./src/components/screens/Product";
-import Signup from "./src/components/screens/Signup";
 import InMainPage from "./src/components/screens/InMainPage";
 import firebaseConfig from "./firebaseConfig";
 
@@ -78,16 +78,41 @@ const AppNavigator = createStackNavigator(
     Product: {
       screen: Product
     },
-    Signup: {
-      screen: Signup
-    },
     InMainPage: {
       screen: InMainPage
     }
   },
   {
-    initialRouteName: "InMainPage"
+    initialRouteName: "Login",
+    headerMode: 'none'
   }
 );
 
-export default createAppContainer(AppNavigator);
+const MainRoot = createAppContainer(AppNavigator);
+
+export default () => {
+  const [isReady, setIsReady] = useState(false);
+
+  const loadAssetsAsync = async () => {
+    await Font.loadAsync({
+      georgia: require('./assets/fonts/Georgia.ttf'),
+      regular: require('./assets/fonts/Montserrat-Regular.ttf'),
+      light: require('./assets/fonts/Montserrat-Light.ttf'),
+      bold: require('./assets/fonts/Montserrat-Bold.ttf'),
+      UbuntuLight: require('./assets/fonts/Ubuntu-Light.ttf'),
+      UbuntuBold: require('./assets/fonts/Ubuntu-Bold.ttf'),
+      UbuntuLightItalic: require('./assets/fonts/Ubuntu-Light-Italic.ttf'),
+    });
+
+    setIsReady(true);
+  };
+
+  loadAssetsAsync();
+
+  if (!isReady) {
+    return null
+  }
+
+  return <MainRoot />;
+};
+
