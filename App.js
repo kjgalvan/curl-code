@@ -1,6 +1,12 @@
-import { StyleSheet } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import {
+  StyleSheet
+} from 'react-native';
+import {
+  createAppContainer
+} from 'react-navigation';
+import {
+  createStackNavigator
+} from 'react-navigation-stack';
 import firebase from 'firebase';
 import '@firebase/firestore';
 
@@ -10,10 +16,14 @@ import Home from './src/components/screens/Home';
 import Login from './src/components/screens/Login';
 import Product from './src/components/screens/Product';
 import Signup from './src/components/screens/Signup';
-
+import InMainPage from './src/components/screens/InMainPage';
 import firebaseConfig from './firebaseConfig';
 
-import { Platform, InteractionManager } from 'react-native';
+
+import {
+  Platform,
+  InteractionManager
+} from 'react-native';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -61,30 +71,30 @@ if (Platform.OS === 'android') {
   };
 }
 
-const AppNavigator = createStackNavigator(
-  {
-    BarCodeScanner: {
-      screen: BarCodeScanner
-    },
-    BarCodeScan: {
-      screen: BarCodeScan
-    },
-    Home: {
-      screen: Home
-    },
-    Login: {
-      screen: Login
-    },
-    Product: {
-      screen: Product
-    },
-    Signup: {
-      screen: Signup
-    },
+const AppNavigator = createStackNavigator({
+  BarCodeScanner: {
+    screen: BarCodeScanner
   },
-  {
-    initialRouteName: 'Signup',
+  BarCodeScan: {
+    screen: BarCodeScan
+  },
+  Home: {
+    screen: Home
+  },
+  Login: {
+    screen: Login
+  },
+  Product: {
+    screen: Product
+  },
+  Signup: {
+    screen: Signup
+  },
+  InMainPage: {
+    screen: InMainPage 
   }
-);
+}, {
+  initialRouteName: 'InMainPage',
+});
 
 export default createAppContainer(AppNavigator);
