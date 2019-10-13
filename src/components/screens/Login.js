@@ -85,7 +85,7 @@ export default class LoginScreen2 extends Component {
       firebase.auth()
         .signInWithEmailAndPassword(email, password)
         .then((resp) => {
-          this.props.navigation.navigate('BarCodeScan');
+          this.props.navigation.navigate('Demo');
         })
         .catch((error) => this.setState({ doesLoginExist: false }))
     }
@@ -119,7 +119,7 @@ export default class LoginScreen2 extends Component {
         .createUserWithEmailAndPassword(email, password)
         .then((resp) => {
           this.newUserSetup(resp.user.uid);
-          this.props.navigation.navigate('BarCodeScan');
+          this.props.navigation.navigate('Demo');
         })
         .catch(error => console.log(error))
     }
