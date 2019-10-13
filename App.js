@@ -5,12 +5,12 @@ import firebase from "firebase";
 import "@firebase/firestore";
 import * as Font from 'expo-font';
 
-import BarCodeScan from "./src/components/screens/BarCodeScan";
+import ScanDemo from "./src/components/screens/ScanDemo";
 import BarCodeScanner from "./src/components/screens/BarCodeScanner";
-import Home from "./src/components/screens/Home";
 import Login from "./src/components/screens/Login";
 import Product from "./src/components/screens/Product";
-import InMainPage from "./src/components/screens/InMainPage";
+import Main from "./src/components/screens/Main";
+
 import firebaseConfig from "./firebaseConfig";
 
 import { Platform, InteractionManager } from "react-native";
@@ -66,11 +66,8 @@ const AppNavigator = createStackNavigator(
     BarCodeScanner: {
       screen: BarCodeScanner
     },
-    BarCodeScan: {
-      screen: BarCodeScan
-    },
-    Home: {
-      screen: Home
+    ScanDemo: {
+      screen: ScanDemo
     },
     Login: {
       screen: Login
@@ -78,13 +75,12 @@ const AppNavigator = createStackNavigator(
     Product: {
       screen: Product
     },
-    InMainPage: {
-      screen: InMainPage
+    Main: {
+      screen: Main
     }
   },
   {
     initialRouteName: "Login",
-    headerMode: 'none'
   }
 );
 

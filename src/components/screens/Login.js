@@ -36,6 +36,10 @@ TabSelector.propTypes = {
 };
 
 export default class LoginScreen2 extends Component {
+  static navigationOptions = {
+    header: null
+  }
+
   constructor(props) {
     super(props);
 

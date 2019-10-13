@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Dimensions, Image, ScrollView } from 'react-nat
 import { Input, Button, SearchBar } from 'react-native-elements';
 
 
-export default class InMainPage extends React.Component {
+export default class Main extends React.Component {
     state = {
         search: '',
     };
