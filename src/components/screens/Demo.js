@@ -39,11 +39,11 @@ export default class Demo extends React.Component {
           onChangeText={this.onChangeText}
         />
         <View style={{ marginTop: 50, flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text style={{ fontFamily: 'regular', alignSelf: 'center', textAlign: 'center' }} h1>Test the Bar Code Scanning!</Text>
+          <Text style={{ fontFamily: 'regular', alignSelf: 'center', textAlign: 'center' }} h3>Test the Bar Code Scanning!</Text>
           <Icon iconStyle={styles.headingIcon} onPress={() => this.props.navigation.navigate('BarCodeScanner')} reverse color="#e8938e" name="barcode-scan" type="material-community" size={70} />
         </View>
         <View style={{ marginTop: 50, marginBottom: 50, flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text style={{ fontFamily: 'regular', alignSelf: 'center', textAlign: 'center' }} h1>Test Google Vision API!</Text>
+          <Text style={{ fontFamily: 'regular', alignSelf: 'center', textAlign: 'center' }} h3>Test Google Vision API!</Text>
           <Icon iconStyle={styles.headingIcon} onPress={() => this.props.navigation.navigate('Camera')} reverse color="#e8938e" name="camera" type="material-community" size={70} />
         </View>
       </ScrollView>
