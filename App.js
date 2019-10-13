@@ -1,26 +1,26 @@
-import { StyleSheet } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-import firebase from 'firebase';
-import '@firebase/firestore';
+import { StyleSheet } from "react-native";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+import firebase from "firebase";
+import "@firebase/firestore";
 
-import BarCodeScan from './src/components/screens/BarCodeScan';
-import BarCodeScanner from './src/components/screens/BarCodeScanner';
-import Home from './src/components/screens/Home';
-import Login from './src/components/screens/Login';
-import Product from './src/components/screens/Product';
-import Signup from './src/components/screens/Signup';
+import BarCodeScan from "./src/components/screens/BarCodeScan";
+import BarCodeScanner from "./src/components/screens/BarCodeScanner";
+import Home from "./src/components/screens/Home";
+import Login from "./src/components/screens/Login";
+import Product from "./src/components/screens/Product";
+import Signup from "./src/components/screens/Signup";
+import InMainPage from "./src/components/screens/InMainPage";
+import firebaseConfig from "./firebaseConfig";
 
-import firebaseConfig from './firebaseConfig';
+import { Platform, InteractionManager } from "react-native";
 
 firebase.initializeApp(firebaseConfig);
-
-import { Platform, InteractionManager } from 'react-native';
 
 const _setTimeout = global.setTimeout;
 const _clearTimeout = global.clearTimeout;
 const MAX_TIMER_DURATION_MS = 60 * 1000;
-if (Platform.OS === 'android') {
+if (Platform.OS === "android") {
   // Work around issue `Setting a timer for long time`
   // see: https://github.com/firebase/firebase-js-sdk/issues/97
   const timerFix = {};
@@ -44,7 +44,7 @@ if (Platform.OS === 'android') {
   global.setTimeout = (fn, time, ...args) => {
     if (MAX_TIMER_DURATION_MS < time) {
       const ttl = Date.now() + time;
-      const id = '_lt_' + Object.keys(timerFix).length;
+      const id = "_lt_" + Object.keys(timerFix).length;
       runTask(id, fn, ttl, args);
       return id;
     }
@@ -52,7 +52,7 @@ if (Platform.OS === 'android') {
   };
 
   global.clearTimeout = id => {
-    if (typeof id === 'string' && id.startWith('_lt_')) {
+    if (typeof id === "string" && id.startsWith("_lt_")) {
       _clearTimeout(timerFix[id]);
       delete timerFix[id];
       return;
@@ -81,19 +81,13 @@ const AppNavigator = createStackNavigator(
     Signup: {
       screen: Signup
     },
+    InMainPage: {
+      screen: InMainPage
+    }
   },
   {
-    initialRouteName: 'Product',
+    initialRouteName: "InMainPage"
   }
 );
 
 export default createAppContainer(AppNavigator);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
