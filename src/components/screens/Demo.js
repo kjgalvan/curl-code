@@ -8,7 +8,7 @@ import {
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
-export default class ScanDemo extends React.Component {
+export default class Demo extends React.Component {
   constructor(props) {
     super(props);
 
@@ -41,6 +41,10 @@ export default class ScanDemo extends React.Component {
         <View style={{ marginTop: 50, flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <Text style={{ fontFamily: 'regular', alignSelf: 'center', textAlign: 'center' }} h1>Test the Bar Code Scanning!</Text>
           <Icon iconStyle={styles.headingIcon} onPress={() => this.props.navigation.navigate('BarCodeScanner')} reverse color="#e8938e" name="barcode-scan" type="material-community" size={70} />
+        </View>
+        <View style={{ marginTop: 50, marginBottom: 50, flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          <Text style={{ fontFamily: 'regular', alignSelf: 'center', textAlign: 'center' }} h1>Test Google Vision API!</Text>
+          <Icon iconStyle={styles.headingIcon} onPress={() => this.props.navigation.navigate('Camera')} reverse color="#e8938e" name="camera" type="material-community" size={70} />
         </View>
       </ScrollView>
     );

@@ -5,11 +5,12 @@ import firebase from "firebase";
 import "@firebase/firestore";
 import * as Font from 'expo-font';
 
-import ScanDemo from "./src/components/screens/ScanDemo";
+import Demo from "./src/components/screens/Demo";
 import BarCodeScanner from "./src/components/screens/BarCodeScanner";
 import Login from "./src/components/screens/Login";
 import Product from "./src/components/screens/Product";
 import Main from "./src/components/screens/Main";
+import Camera from "./src/components/screens/Camera";
 
 import firebaseConfig from "./firebaseConfig";
 
@@ -66,8 +67,8 @@ const AppNavigator = createStackNavigator(
     BarCodeScanner: {
       screen: BarCodeScanner
     },
-    ScanDemo: {
-      screen: ScanDemo
+    Demo: {
+      screen: Demo
     },
     Login: {
       screen: Login
@@ -77,10 +78,13 @@ const AppNavigator = createStackNavigator(
     },
     Main: {
       screen: Main
+    },
+    Camera: {
+      screen: Camera
     }
   },
   {
-    initialRouteName: "Login",
+    initialRouteName: "Demo",
   }
 );
 

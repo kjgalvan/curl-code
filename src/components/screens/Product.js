@@ -166,7 +166,7 @@ export default class Product extends React.Component {
         </View>
         <View>
           {analyzed && warn.length === 0 && avoid.length === 0 &&
-            <Text style={{ alignSelf: 'center', textAlign: 'center', color: '#e8938e' }} h3>This product is CG compliant</Text>
+            <Text style={{ alignSelf: 'center', textAlign: 'center', color: '#e8938e', marginBottom: 30, marginTop: 20 }} h3>This product is CG compliant</Text>
           }
           {this.getCards(recommend, 'Recommended For You')}
           {this.getCards(approve, 'CG Approved')}
