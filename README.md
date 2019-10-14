@@ -8,7 +8,7 @@ Demo page with two options: Barcode scanning and Google Vision API image to text
 
 ![Demo Page](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100532_Expot1.jpg?alt=media&token=6fed0f14-e05c-4145-a7f5-17e4a9f12d75)
 
-Scanning product is fully functional, rulesets are written to customizable in future
+Scanning product is fully functional, rulesets are written to be customizable in the future
 
 ![Product Result](https://firebasestorage.googleapis.com/v0/b/curl-code.appspot.com/o/Screenshot_20191013-100552_Expo.jpg?alt=media&token=7f612a14-9d68-4b58-aba1-1b993a429a89)
 
