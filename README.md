@@ -4,6 +4,8 @@ A cross-platform mobile app that analyzes ingredient lists of hair products for 
 
 *First place winner of Best Use of Google Cloud at DubHacks 2019. See [DevPost](https://devpost.com/software/curl-code) for more details.*
 
+See [Trello](https://trello.com/b/0IBHvJBO/curl-code) for planned and current tasks.
+
 ## Screenshots
 
 Demo page with two options: Barcode scanning and Google Vision API image to text
