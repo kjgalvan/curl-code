@@ -1,6 +1,8 @@
 # curl-code
 
-A cross-platform mobile app that analyzes ingredient lists of hair products for compliance with the Curly Girl Method (CGM)
+A cross-platform mobile app that analyzes ingredient lists of hair products for compliance with the Curly Girl Method (CGM).
+
+*Winner of Best Use of Google Cloud at DubHacks 2019. See [DevPost](https://devpost.com/software/curl-code) for more details.*
 
 ## Screenshots
 
