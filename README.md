@@ -1,5 +1,7 @@
 # curl-code
 
+A cross-platform mobile app that analyzes ingredient lists of hair products for compliance with the Curly Girl Method (CGM)
+
 ## Screenshots
 
 Demo page with two options: Barcode scanning and Google Vision API image to text
