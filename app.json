@@ -1,9 +1,12 @@
 {
   "expo": {
-    "name": "curl-code",
+    "name": "CurlCode",
     "slug": "curl-code",
     "privacy": "public",
     "sdkVersion": "35.0.0",
+    "android": {
+      "package": "com.self.curlcode"
+    },
     "platforms": [
       "ios",
       "android",
